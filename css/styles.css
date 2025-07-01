@@ -68,18 +68,15 @@ nav {
     background-clip: text;
 }
 
-.logo-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo-image {
     height: 60px;
-    width: 200px;
-    background: linear-gradient(45deg, var(--fresh-green), var(--light-green));
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-align: center;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
 }
 
 .nav-links {
